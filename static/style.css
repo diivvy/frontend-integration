@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-image: url('grad-pic.png');
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 400px;
+    padding: 0 20px;
+  }
+  
+  header {
+    width: 100%;
+    background-color: green;
+    height: 115px; /* Thick upper border */
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 100px;
+  }
+  
+  footer {
+    width: 100%;
+    background-color: green;
+    height: 20px;
+    bottom: 0;
+    left: 0;
+    position: fixed; /* Green bottom border */
+  }
+  
+  .login-box {
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent whitish background */
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 50px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+    margin-bottom: 15px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    background-color: green;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: darkgreen;
+  }
+  
+  .auth-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+  }
+  
+  .auth-buttons button {
+    background-color: #0073b1; 
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .auth-buttons .unt-email-btn {
+    background-color: green; 
+  }
+  
+  .auth-buttons button:hover {
+    opacity: 0.9;
+  }
+  
+  .register {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .register a {
+    color: green;
+    text-decoration: none;
+  }
+  
+  .register a:hover {
+    text-decoration: underline;
+  }
+  
