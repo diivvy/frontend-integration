@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNT Alumni Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* General Styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+        img {
+            max-width: 100%;
+        }
+        /* Header Styling */
+        header {
+            background-color: #006847;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+            color: #fff;
+        }
+        header .logo img {
+            height: 40px;
+        }
+        header nav {
+            display: flex;
+            gap: 1.5rem;
+        }
+        header nav a {
+            color: #fff;
+            font-weight: bold;
+        }
+        .user-info {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        .user-info span {
+            font-weight: bold;
+        }
+        .user-info button {
+            background-color: #fff;
+            color: #006847;
+            border: 1px solid #006847;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        .user-info button:hover {
+            background-color: #006847;
+            color: #fff;
+        }
+        /* Hero Section */
+        .intro {
+            background: #e5f5eb;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+        .intro h1 {
+            font-size: 2.5rem;
+            color: #006847;
+            margin-bottom: 0.5rem;
+        }
+        .intro p {
+            font-size: 1.2rem;
+            color: #333;
+            margin-bottom: 2rem;
+        }
+        /* Features Section */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            padding: 2rem;
+        }
+        .feature-box {
+            background-color: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            cursor: pointer;
+        }
+        .feature-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .feature-box i {
+            color: #006847;
+            margin-bottom: 1rem;
+        }
+        .feature-box h2 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: #006847;
+        }
+        .feature-box p {
+            font-size: 0.95rem;
+            color: #555;
+        }
+        /* Footer Styling */
+        footer {
+            background-color: #006847;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1.5rem 2rem;
+        }
+        .footer-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 1rem 0;
+            gap: 1rem;
+        }
+        .footer-links a {
+            color: #fff;
+            font-size: 0.9rem;
+        }
+        .language-selector select {
+            padding: 0.25rem;
+            border: none;
+            background-color: #fff;
+            color: #006847;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="UNT-Alumni-logo-1.png" alt="UNT Alumni Logo">
+        </div>
+        <nav>
+            <a href="feed.html"><i class="fas fa-rss"></i> Feed</a>
+            <a href="network.html"><i class="fas fa-user-friends"></i> Network</a>
+            <a href="jobs.html"><i class="fas fa-briefcase"></i> Jobs</a>
+            <a href="inbox.html"><i class="fas fa-envelope"></i> Inbox</a>
+            <a href="notifications.html"><i class="fas fa-bell"></i> Notifications</a>
+        </nav>
+        <div class="user-info">
+            <span>Welcome, [User]</span>
+            <button onclick="window.location.href='logout.html'">Logout</button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="intro">
+        <h1>Welcome to Your UNT Alumni Dashboard</h1>
+        <p>Connect, engage, and explore opportunities with your alumni network.</p>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="feature-box" onclick="window.location.href='feed.html'">
+            <i class="fas fa-rss fa-3x"></i>
+            <h2>Community Feed</h2>
+            <p>Stay updated with the latest news, posts, and events from fellow alumni.</p>
+        </div>
+        <div class="feature-box" onclick="window.location.href='network.html'">
+            <i class="fas fa-user-friends fa-3x"></i>
+            <h2>Network</h2>
+            <p>Connect with alumni, grow your network, and explore mentorship opportunities.</p>
+        </div>
+        <div class="feature-box" onclick="window.location.href='jobs.html'">
+            <i class="fas fa-briefcase fa-3x"></i>
+            <h2>Job Opportunities</h2>
+            <p>Find career resources and job openings curated for the alumni community.</p>
+        </div>
+        <div class="feature-box" onclick="window.location.href='inbox.html'">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h2>Messaging</h2>
+            <p>Engage in meaningful conversations and reconnect with peers directly.</p>
+        </div>
+        <div class="feature-box" onclick="window.location.href='notifications.html'">
+            <i class="fas fa-bell fa-3x"></i>
+            <h2>Notifications</h2>
+            <p>Receive real-time updates on events, messages, and opportunities.</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- Footer -->
+<footer>
+    <div class="footer-logo">
+        <img src="UNT-Alumni-logo-1.png" alt="UNT Alumni Logo">
+    </div>
+    <div class="language-selector">
+        <label for="language">Language</label>
+        <select id="language">
+            <option>English</option>
+        </select>
+    </div>
+</footer>
+</body>
+</html>
